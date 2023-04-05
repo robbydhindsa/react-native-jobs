@@ -46,6 +46,7 @@ const Welcome = () => {
 
       <View style={styles.tabsContainer}>
         <FlatList
+          scrollEnabled={false}
           data={jobTypes}
           renderItem={({ item }) => (
             <TouchableOpacity
