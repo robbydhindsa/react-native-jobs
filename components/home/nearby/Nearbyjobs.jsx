@@ -1,7 +1,7 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import { View, Text } from 'react-native';
 
-import styles from './nearbyjobs.style'
+import styles from './nearbyjobs.style';
 
 const Nearbyjobs = () => {
   return (
