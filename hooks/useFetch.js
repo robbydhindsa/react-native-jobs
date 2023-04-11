@@ -11,15 +11,10 @@ const useFetch = (endpoint, query) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // const rapidApiKey = process.env.REACT_APP_RAPID_API_KEY;
-  // const rapidApiHost = process.env.REACT_APP_RAPID_API_HOST;
-  // console.log("rapid api key: ", rapidApiKey);
-  console.log("rapid api key: ", RAPID_API_KEY);
   const options = {
     method: 'GET',
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     headers: {
-      // IMPORT FROM .ENV FILE BEFORE PUSHING CHANGES TO GITHUB
       'X-RapidAPI-Key': RAPID_API_KEY,
       'X-RapidAPI-Host': RAPID_API_HOST
     },
